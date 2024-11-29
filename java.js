@@ -61,8 +61,8 @@ function renderTasks(filter) {
         li.appendChild(deleteButton);
         li.querySelector("p").addEventListener("click", () => toggleTask(index));
         taskList.appendChild(li);
-        updateFilterButtons();
-    })
+    });
+    updateFilterButtons();
 }
 
 //delete task
