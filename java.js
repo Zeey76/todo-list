@@ -55,7 +55,8 @@ function renderTasks(filter) {
         deleteButton.classList.add("cross-icon");
         deleteButton.setAttribute("data-index", index);
         deleteButton.innerHTML = `<img src="./icons/icon-cross.svg">`;
-        deleteButton.onclick = () => deleteTask(index);
+        deleteButton.addEventListener("click", () => deleteTask(index));
+
         li.appendChild(checkIcon);
         li.appendChild(taskText);
         li.appendChild(deleteButton);
